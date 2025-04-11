@@ -55,7 +55,7 @@ module.exports = {
       {
         singleQuote: true,
         endOfLine: 'auto',
-        parser: 'flow',
+        parser: 'typescript',
       },
     ],
   },
