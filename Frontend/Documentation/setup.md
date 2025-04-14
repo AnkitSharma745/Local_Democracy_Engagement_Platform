@@ -56,7 +56,7 @@ Follow these steps to set up a new React project using Vite:
      ```
 
 9. **Open the Address Displayed**
-   - Open your web browser and navigate to the address shown in the terminal (usually `http://localhost:3000` or a similar port).
+   - Open your web browser and navigate to the address shown in the terminal (usually `http://localhost:5174` or a similar port).
 
 ---
 

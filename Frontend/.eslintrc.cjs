@@ -24,12 +24,23 @@ module.exports = {
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
+    project: ['./tsconfig.json'],
   },
   overrides: [
     {
-      files: ['vite.config.ts'],
-      rules: {},
+      files: ['vite.config.ts', 'src/**/*.slice.ts'],
+      rules: { 'no-param-reassign': ['error', { props: false }] },
+    },
+    {
+      env: {
+        node: true,
+        browser: false,
+      },
+
+      rules: {
+        'no-console': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
+      },
     },
   ],
   plugins: [
